@@ -7,14 +7,21 @@ All this information will be shown using graphs that will show comparison of the
 ###Current State
 The project is under development, first we are focusing on fetching and preparing data so that it can be graph can be generated. The visualization part is kept untouched at present.
 
-###To use
+###To Use
 Though the application is not completed yet, you can try it by following undermentioned easy steps:
+
 1. git clone https://github.com/swati-jaiswal/Github-Kundali
 2. cd Github-Kundali
 3. python3 fetch-data.py
 
 It will ask you to enter username of github account, enter it and see the result :)
 
+###Future Work
+* Fetch lines of code added, deleted
+* Fetch issues resolved, raised
+* Adding auth2 for user authentication
+Visualization part
+Get all repos a person have ever committed to.
 
 
 

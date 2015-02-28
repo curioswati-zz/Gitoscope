@@ -20,8 +20,8 @@ It will ask you to enter username of github account, enter it and see the result
 * Fetch lines of code added, deleted
 * Fetch issues resolved, raised
 * Adding auth2 for user authentication
-Visualization part
-Get all repos a person have ever committed to.
+* Visualization part
+* Get all repos a person have ever committed to.
 
 
 

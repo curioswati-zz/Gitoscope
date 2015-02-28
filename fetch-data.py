@@ -14,12 +14,12 @@ def get_user_info(username):
     url = "https://api.github.com/users/"+username
     r = requests.get(url).json()
     
-    print('username: {username} \n Real Name: {real_name} \n \
-          gravtar_url: {avatar_url} \n email address: {email} \n \
-          github url: {github_url} \n Number of Public repos: \
-          {public_repos}'.format(username=username, real_name=r[u'name'],
-          avatar_url= r[u'avatar_url'], email= r[u'email'], github_url=r[u'url'],
-          public_repos= r[u'public_repos']))
+    print(' username: {username} \n Real Name: {real_name} \n gravtar_url: {avatar_url} \n email address: {email} \n github url: {github_url} \n Number of Public repos: {public_repos}\n'.format(username=username, 
+        real_name=r[u'name'],
+        avatar_url= r[u'avatar_url'],
+        email= r[u'email'],
+        github_url=r[u'url'],
+        public_repos= r[u'public_repos']))
     
     return r
 
@@ -56,7 +56,7 @@ def get_repos_info(username, url):
         _issues_url = _repo_url+'/issues'
         _issues = get_total_issues_by_user_in_a_repo(username, _issues_url)
                        
-        print('repo name: {name} \n repo url {repo_url} \n Description:{description}\n number of contributors:{number_of_contributors}\n total number of commits: {total_commits}\n Commits made by {username}:{number_of_commits_by_given_user}\n issues: {issues}\n'.format(name=_repo_name,
+        print(' repo name: {name} \n repo url {repo_url} \n Description:{description}\n number of contributors:{number_of_contributors}\n total number of commits: {total_commits}\n Commits made by {username}:{number_of_commits_by_given_user}\n issues: {issues}\n'.format(name=_repo_name,
             repo_url=_repo_url, number_of_contributors=_number_of_contributors,
             total_commits=_total_commits,
             description=_repo_description, username=username,

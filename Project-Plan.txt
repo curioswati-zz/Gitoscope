@@ -1,12 +1,13 @@
 |- Source
     |- API
-        - User_profile.py : Collects basic profile information of a user.
+        |- Data Fetch
+            - User_profile.py : Collects basic profile information of a user.
+            - Repo_names.py   : Fetches the names of all the repositories user has contributed to.
+            - Commits.py      : Fetches the no. of commits of the user in different repositories
+                                and total commits made in those repositories; to prepare a pie charts.
+            - Issues.py       : Same done with commits.
+            - Lines_of_code.py: Same done above.
         - OAuth.py        : Authenticates the application.
-        - Repo_names.py   : Fetches the names of all the repositories user has contributed to.
-        - Commits.py      : Fetches the no. of commits of the user in different repositories
-                            and total commits made in those repositories; to prepare a pie charts.
-        - Issues.py       : Same done with commits.
-        - Lines_of_code.py: Same done above.
     |- UI
         |- Bootstrap
             |- css        : All css files.
@@ -15,13 +16,13 @@
             - *.html      : All html files for UI design.
         |- Visualization
             - *.js        : All js files for visualization.
-
 |- Docs
     |- User Docs
     |- Developer Docs
 |- Tests
     |- Unit tests
     |- Module tests
+    |- Functional tests
 - LICENSE
 - README
 - Misc

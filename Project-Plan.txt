@@ -1,28 +1,40 @@
-|- Source
-    |- API
+|- app
+    |- Controllers
+        - OAuth.py            : Authenticates the application.
+    |- Models
         |- Data Fetch
-            - User_profile.py : Collects basic profile information of a user.
-            - Repo_names.py   : Fetches the names of all the repositories user has contributed to.
-            - Commits.py      : Fetches the no. of commits of the user in different repositories
+            - user_profile.py : Collects basic profile information of a user.
+            - repo_names.py   : Fetches the names of all the repositories user has contributed to.
+            - commits.py      : Fetches the no. of commits of the user in different repositories
                                 and total commits made in those repositories; to prepare a pie charts.
-            - Issues.py       : Same done with commits.
-            - Lines_of_code.py: Same done above.
-        - OAuth.py        : Authenticates the application.
-    |- UI
-        |- Bootstrap
-            |- css        : All css files.
-            |- js         : All js files for UI design.
-        |- custom_Design
-            - *.html      : All html files for UI design.
-        |- Visualization
-            - *.js        : All js files for visualization.
-|- Docs
-    |- User Docs
-    |- Developer Docs
-|- Tests
-    |- Unit tests
-    |- Module tests
-    |- Functional tests
+            - issues.py       : Same done with commits.
+            - lines_of_code.py: Same done above.
+        |- Data Frame
+            - *.py            : Files which extract useful data and outputs csv files.
+    |- views
+        - application.py      : base application file
+        |- layouts
+            - *.html          : All html layouts like header, footer and others.
+        |- visualize
+            - *.js            : All js files for visualization.
+    |- assets
+        |- images
+        |- styelsheets
+            - *.css
+        |- javascripts
+            - *.js
+|- script
+    - server.py               : file which starts the server
+|- config
+|- docs
+    |- user docs
+    |- developer docs
+|- tests
+    |- mocks
+    |- fixtures
+    |- unit tests
+    |- functional tests
+|- log
 - LICENSE
 - README
 - Misc

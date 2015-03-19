@@ -1,7 +1,7 @@
-# Github-Kundali
+# Gitoscope
 
 ###Overview
-Github Kundali is an application to show a user's performance on his github account. For a given usernamse Github-Kundali will list all the repos user have contributed(ever made a commit), and for each repo it will list number of commits he made, issues he raised and solved, lines of code a person he added and deleted.
+Gitoscope is an application to show a user's performance on his github account. For a given usernamse Gitoscope will list all the repos user have contributed(ever made a commit), and for each repo it will list number of commits he made, issues he raised and solved, lines of code a person he added and deleted.
 All this information will be shown using graphs that will show comparison of the total commits, issues, lines of code a repo have to the ones user have contributed. 
 
 ###Current State
@@ -10,8 +10,8 @@ The project is under development, first we are focusing on fetching and preparin
 ###To Use
 Though the application is not completed yet, you can try it by following undermentioned easy steps:
 
-1. git clone https://github.com/swati-jaiswal/Github-Kundali
-2. cd Github-Kundali
+1. git clone https://github.com/swati-jaiswal/Gitoscope
+2. cd Gitoscope
 3. python3 fetch-data.py
 
 It will ask you to enter username of github account, enter it and see the result :)
